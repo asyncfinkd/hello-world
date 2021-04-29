@@ -1,11 +1,12 @@
-    global  _main
-    extern  _printf
+STK 2
+ORG 0
 
-    section .text
-_main:
-    push    message
-    call    _printf
-    add     esp, 4
-    ret
-message:
-    db  'Hello, World', 10, 0
+TXT "Hello World"
+DB_ 0
+
+@LOOP
+	RCL R2, R1
+	JZ_ R2, 0
+	OUT R2
+	INC R1
+	JMP %LOOPs
