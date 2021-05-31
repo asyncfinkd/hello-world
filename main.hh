@@ -1,3 +1,0 @@
-
-<?hh 
-echo 'Hello World';

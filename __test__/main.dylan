@@ -1,1 +1,0 @@
-format-out("Hello World")

@@ -1,3 +1,0 @@
-{
-    SendMessageToPC(GetEnteringObject(), "Hello World");
-}
